@@ -1,0 +1,39 @@
+# core latex/pdflatex auxiliary files:
+*.aux
+*.out
+*.log
+
+## output:
+oddilovy_zpevnik1.pdf
+oddilovy_zpevnik1_text.pdf
+
+## Build tool auxiliary files:
+*.synctex
+*.synctex(busy)
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# xindy
+*.xlg
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# Kile
+*.backup
+
+# TeXnicCenter
+*.tcp
+*.tps
+
+# auto folder when using emacs and auctex
+/auto/*

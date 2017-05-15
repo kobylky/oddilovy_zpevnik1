@@ -1,0 +1,277 @@
+\documentclass[12pt,a5paper,twoside,english,czech]{article}
+
+% page geomtery
+\usepackage[inner=20mm,outer=5mm,top=7mm,bottom=13mm,footskip=7mm]{geometry}
+
+%%% Velikost a5 stranky je 148 x 210 mm
+%\setlength\hoffset{-25.4mm} % 25.4 mm + \hoffset = levy horizointalni okraj
+%\setlength\voffset{-25.4mm} % 25.4 mm + \voffset = horní vertikalni okraj
+%\setlength\oddsidemargin{20mm} % leve odsazeni na sude strance
+%\setlength\evensidemargin{5mm} % leve odsazeni na liche strance => odsazeni od stredu je: 
+%% sirka stranky - \hoffset - 25.4mm - \textwidth - oddsidemargin
+%
+%%% Zahlavi
+%\setlength\topmargin{0mm} % odsazeni zahlavi od horni pozice urcene \voffset
+%\setlength\headsep{6mm} % odsazeni textu od zahlavi
+%\setlength\headheight{0mm} % vyska zahlavi
+%
+%%% zapati
+%\setlength\footskip{5mm} % odsazeni spodni hranice zapati od hlavniho textu
+%
+%%% Poznamky u okraje
+%\setlength\marginparwidth{5em} % sirka poznamky u kraje
+%\setlength\marginparsep{5pt} % odsazeni poznamky u kraje od hlavniho textu
+%
+%%% velikost oblasti pro psani textu
+%\setlength\textwidth{122mm} % sirka textu
+%\setlength\textheight{190mm} % vyska textu
+%
+%%% konec parametru stranky
+
+% used packages
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage[english,czech]{babel}
+\usepackage{lmodern}% vektorové fonty Latin Modern, nástupce pùvoních Knuthových Computern Modern fontù
+\usepackage[OT1,T1]{fontenc}% kódování fontù
+\usepackage{color}% umožòuje používat barevný text a tak \textcolor{declared-color}{text}
+\usepackage{microtype} %Zapina pouziti mikrotypografie - (protutrusion=true - posunuti pismen na kraji radku,
+% expansion=true) - male roztazeni a zuzeni znaku
+
+\usepackage[\songspar,onesongcolumn]{songs}
+\usepackage{makeidx}
+\makeindex
+\usepackage[columns=1,initsep=0pt]{idxlayout}
+\usepackage[titles]{tocloft} % customize table of contents
+
+\usepackage{ccicons}
+
+\usepackage[unicode, pdftex,
+						colorlinks=false,
+						pdfpagemode=UseOutlines,
+						pdfdisplaydoctitle=true,
+						raiselinks=false,
+						pdfhighlight=/N,
+						pdfborder={0 0 0},
+						pdflang=en,
+						pdfstartview=FitH]%,
+						{hyperref}
+
+% song settings
+\nosongnumbers % switch off song numberse
+\setlength{\versenumwidth}{1.3em} % set width of verse numbers
+
+% set style of chords
+\renewcommand{\printchord}[1]{\bfseries\sffamily\footnotesize#1}
+
+% set style of sharp adn flat printing
+% \renewcommand{\sharpsymbol}{\ensuremath{\#}\,}
+% \renewcommand{\flatsymbol}{\ensuremath{\flat}\,}
+
+% size of verse separation
+\versesep=10pt plus 5pt minus 3pt
+\newlength\tempversesep % for temporary storing versesep
+
+% set separation between chords and text
+\renewcommand{\clineparams}{
+  \baselineskip=10pt
+	\lineskiplimit=0pt
+	\lineskip=0pt
+}
+
+% switch off chorus bar
+\setlength{\cbarwidth}{0pt} % chorus bar width
+\setlength{\sbarheight}{0pt} % separator bar height
+
+% defines style in which the authors is showed
+\makeatletter
+\renewcommand{\showauthors}{ % redefine default not to be boldface
+  \setbox\SB@box\hbox{\sfcode`.\@m\songauthors}%
+  \ifdim\wd\SB@box>\z@\unhbox\SB@box\par\fi%
+}
+\makeatother
+
+% defines attributes which are printed in the song header
+\renewcommand{\extendprelude}{ % printed header information
+  \showauthors
+}
+
+% title and header formating
+\renewcommand{\makeprelude}{
+  \resettitles
+	\hypersetup{bookmarksdepth=0}
+	\index{\songtitle}
+	\addcontentsline{toc}{section}{\songtitle}
+	\hypersetup{bookmarksdepth=2}
+	{\Large\bfseries\sffamily\songtitle\par\nexttitle\foreachtitle{(\songtitle)\par}}
+	{\footnotesize\sffamily\itshape\extendprelude}
+}
+
+% margins befor and after song header
+\afterpreludeskip=0pt
+\beforepostludeskip=0pt
+
+% switch off song footer
+\renewcommand{\makepostlude}{}
+
+% set formating of table of contents, it can be used if xindy is not present
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftsubsecdotsep}}
+%\renewcommand{\cftsecfont}{\normalfont}
+%\renewcommand{\cftsecpagefont}{\normalfont}
+%\renewcommand{\cftdotsep}{1}
+%\renewcommand{\cftbeforesecskip}{0pt}
+%% \cftsetindents{subsection}{0em}{0em}
+
+\newcommand\lettergroup[1]{} % switches off letters generated at the beginning of each
+% lettergroup by xindy
+
+% custom macros
+
+ % implement refrain as verse with leading R: 
+\makeatletter
+\newif\ifvspecial
+\providecommand\vverseleadingchars{}
+\newenvironment{refrain}
+{
+  \vspecialtrue\renewcommand\vverseleadingchars{R:}
+	\beginverse
+}{%
+	  \endverse%
+		\vspecialfalse
+	  \addtocounter{versenum}{-1}% decrease increased counter
+}
+\newcommand\beginrefrain{%
+  \vspecialtrue\renewcommand\vverseleadingchars{R:}\beginverse%
+}
+\makeatother
+
+ % implement special as verse with leading user defined parameter: 
+\makeatletter
+\newif\ifvspecial
+\newenvironment{specialverse}[1]
+{
+  \vspecialtrue\renewcommand\vverseleadingchars{#1}
+	\beginverse
+}{%
+  \endverse%
+	\vspecialfalse%
+  \addtocounter{versenum}{-1}% decrease increased counter
+}
+\newcommand\beginspecialverse[1]{%
+  \vspecialtrue\renewcommand\vverseleadingchars{#1}
+  \beginverse%
+}
+\makeatother
+
+% redefine \printversenum to print special character for refrains etc.
+\renewcommand{\printversenum}[1]{\ifvspecial {\lyricfont\vverseleadingchars} \else {\lyricfont#1.} \fi}
+
+% define emptyspecialverse so that it is tightly attached to the preceding verse (without any margin)
+\makeatletter
+\newcommand\emptyspecialverse[1]{%
+  \SB@inversetrue%
+	\def\SB@closeall{\endsong}
+	\global\SB@stanzatrue%
+	\setbox\SB@box\vbox\bgroup\begingroup%
+	  \setbox\SB@box\hbox{#1}%
+		\ifdim\wd\SB@box<\versenumwidth%
+		  \setbox\SB@box%
+			\hbox to\versenumwidth{\unhbox\SB@box\hfil}%
+		\fi%
+		\placeversenum\SB@box%
+	\endgroup\egroup
+	\SB@putbox\unvbox\SB@box
+	\SB@inversefalse
+	\SB@prevversetrue
+}
+\makeatother
+
+% define \emptyspecialrefrain to be tightly attached to the preceding verse
+\newcommand\emptyrefrain{\emptyspecialverse{R:}}
+
+% redefine default \lrep a \rrep not to extend to the chords line
+\makeatletter
+\renewcommand\lrep{%
+  \ifchorded%
+    \SB@dimen.5\baselineskip%
+	\else%
+	  \SB@dimen\baselineskip%
+	\fi%
+	\advance\SB@dimen-2\p@%
+	\ifvmode\leavevmode\fi% leave vertical mode to enable raise
+	\raise-.5\p@\hbox{%
+	  \vrule\@width1.5\p@\@height\SB@dimen\@depth\p@%
+	  \kern1.5\p@%
+	  \vrule\@width.5\p@\@height\SB@dimen\@depth\p@%
+	}%
+	\raise1.25\p@\hbox{:}%
+}
+\renewcommand\rrep{%
+  \raise1.25\p@\hbox{:}%
+  \ifchorded%
+    \SB@dimen.5\baselineskip%
+	\else%
+	  \SB@dimen\baselineskip%
+	\fi%
+	\advance\SB@dimen-2\p@%
+	\raise-.5\p@\hbox{%
+	  \vrule\@width.5\p@\@height\SB@dimen\@depth\p@%
+	  \kern1.5\p@%
+	  \vrule\@width1.5\p@\@height\SB@dimen\@depth\p@%
+	}%
+}
+\makeatother
+
+% redefine \rep not to extend parenthesees under line
+\makeatletter
+\renewcommand\rep[1]{%
+  \ifvmode\leavevmode\fi% leave vertical mode to enable raise
+  \raise.5\p@\hbox{(}%
+	#1%
+	\raise.25ex\hbox{%
+		\fontencoding{OMS}\fontfamily{cmsy}\selectfont\char\tw@%
+  }%
+	\raise.5\p@\hbox{)}%
+}
+\makeatother
+
+% switch off all chords if chords are not used
+\def\chordedtoken{chorded}
+\ifx\chordedtoken\songspar
+\else
+  \renewcommand{\chordson}{\chordsoff}
+\fi
+
+% redefines \colbotglue, which is used by the \brk command
+% when the page is broken to fill the rest of the page by
+% the blank space instead of stretch the song on the whole
+% page in lyric mode (in chorded mode, this behavior is by
+% default).
+\makeatletter
+\iflyric\def\colbotglue{\z@\@plus.5\textheight}\fi
+\makeatother
+
+\newcommand\mytocline[2]{\hyperlink{page.#2}{#1\dotfill#2}} % hyperref whole toc line to page
+
+% define macro, which clears to the page divisible by four. It is used for the last (cover) page
+% and you have to be carefull with using it, because if you reset counter somewhere, you have
+% to reflect page numbering shift
+\makeatletter
+\newcommand\cleartofourthpage[1]{%
+  \clearpage%
+  \count@=\numexpr\c@page+#1\relax% adds to counter to reflect the page numbering shift
+	\@tempcnta=\count@%
+	% compute modulo
+	\divide\@tempcnta by 4%
+	\multiply\@tempcnta by 4%
+	\count@=\numexpr\count@-\@tempcnta\relax%
+	% clear pages
+	\loop\ifnum\count@<4%
+		\ifnum\count@=3% no number on the page before last page
+			\pagestyle{empty}%
+	  \fi%
+		\null\clearpage%
+		\advance\count@\@ne%
+	\repeat%
+}
+\makeatother

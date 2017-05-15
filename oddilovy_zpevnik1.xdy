@@ -1,0 +1,16 @@
+;; Style for songs using `xindy'.
+
+;; ~ serves as escaping character, for example ~n stands for new line
+
+;; location numbers are divided by \dotfill from keywords
+;; (markup-locclass-list :open "\dotfill")
+
+;; ;; more location numbers are separated by comma
+;; (markup-locref-list :sep ", ")
+
+;; override hyperref hyperpage to empty command
+(markup-locref :open "" :close "" :attr "hyperpage")
+
+;; use \mytocline command to hyperlink whole line
+(markup-keyword-list :open "\mytocline{" :close "}")
+(markup-locclass-list :open "{" :close"}")
