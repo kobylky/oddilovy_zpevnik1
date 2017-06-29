@@ -61,6 +61,11 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 - Přidán český `CHANGELOG`.
 
 
+### Opraveno
+
+- Překlepy.
+
+
 ## [Verze 2.0.0-beta.1 *(2017-06-01)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0-beta.1)
 
 
