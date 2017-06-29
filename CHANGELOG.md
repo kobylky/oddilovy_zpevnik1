@@ -53,6 +53,7 @@ Formát tohoto changelogu je založen na
 mil`) nebo odebráním opakujících se akordů (`Batalion`, `Bludnej Ir`, `Čert v
 Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 `Na kolena`, `Niagara`, `V pekle sudy válej`, `Valčíček`, `Večerníček`).
+- Odstraňen `a on tam stál` opakující se úryvek s písně `Strom`.
 
 
 ### [Změny od verze beta 1:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...develop)
@@ -66,6 +67,11 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 
 - Překlepy.
 - Posunut akord `D` na posledním řádku refrénu písně `Severní vítr`.
+
+
+### Odstraňeno
+
+- Odstraňen `a on tam stál` opakující se úryvek s písně `Strom`.
 
 
 ## [Verze 2.0.0-beta.1 *(2017-06-01)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0-beta.1)

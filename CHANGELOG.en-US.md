@@ -47,14 +47,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Moved chord `D` at the last line of refrain of the `Severní vítr` song.
 
 
-
-
 ### Removed
 
 - Some songs were shortend by inserting repetitions (`Anděl`, `Proměny`, `Tisíc
 mil`) or removing repetitive chords (`Batalion`, `Bludnej Ir`, `Čert v
 Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 `Na kolena`, `Niagara`, `V pekle sudy válej`, `Valčíček`, `Večerníček`).
+- Removed `a on tam stál` repeting text from the `Strom` song.
 
 
 ### [Changes from beta 1:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...develop)
@@ -69,6 +68,11 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 
 - Typos.
 - Moved chord `D` at the last line of refrain of the `Severní vítr` song.
+
+
+### Removed
+
+- Removed `a on tam stál` repeting text from the `Strom` song.
 
 
 ## [Version 2.0.0-beta.1 *(2017-06-01)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0-beta.1)
