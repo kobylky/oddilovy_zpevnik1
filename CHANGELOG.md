@@ -37,6 +37,7 @@ Formát tohoto changelogu je založen na
 
 - Zpěvník byl převeden do LaTeXu.
 - Změna stránkovaní a pořadí písní.
+- Upřesněno `la la la` na konci písničky `Večerníček`.
 
 
 ### Opraveno
@@ -60,7 +61,13 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 
 
 ### Přidáno
+
 - Přidán český `CHANGELOG`.
+
+
+# Změněno
+
+- Upřesněno `la la la` na konci písničky `Večerníček`.
 
 
 ### Opraveno

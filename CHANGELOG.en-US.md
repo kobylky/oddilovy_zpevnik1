@@ -37,6 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Changed to LaTeX backend.
 - Changed pagination and song order.
+- Specified the ending `la la la` from the `Večerníček` song.
 
 
 ### Fixed
@@ -62,6 +63,11 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 ### Added
 
 - Added czech `CHANGELOG`.
+
+
+### Changed
+
+- Specified the ending `la la la` from the `Večerníček` song.
 
 
 ### Fixed
