@@ -44,6 +44,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed many typos.
 - Changed chord `A` to `D` in `Dopis Ježíškovi` song.
 - Shifted `G` chord in `Babinský` song.
+- Moved chord `D` at the last line of refrain of the `Severní vítr` song.
+
+
 
 
 ### Removed
@@ -65,6 +68,7 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 ### Fixed
 
 - Typos.
+- Moved chord `D` at the last line of refrain of the `Severní vítr` song.
 
 
 ## [Version 2.0.0-beta.1 *(2017-06-01)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0-beta.1)

@@ -44,6 +44,7 @@ Formát tohoto changelogu je založen na
 - Mnoho překlepů.
 - Změněn akord `A` na akord `D` v písni `Dopis Ježíškovi`.
 - V písni `Babinský` byl posunut akord `G`.
+- Posunut akord `D` na posledním řádku refrénu písně `Severní vítr`.
 
 
 ### Odstraněno
@@ -64,6 +65,7 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 ### Opraveno
 
 - Překlepy.
+- Posunut akord `D` na posledním řádku refrénu písně `Severní vítr`.
 
 
 ## [Verze 2.0.0-beta.1 *(2017-06-01)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0-beta.1)
