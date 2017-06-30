@@ -17,17 +17,20 @@ This pack songbook makes use of [LaTeX][latex] typographic system and
 You can contact our 2<sup>nd</sup> Cub Pack Grasshopers Litoměřice, Czech
 republic for example at pack e-mail
 [2.smecka.kobylky@gmail.com][packmail] or our webpages
-[http://kobylky.radobyl.eu][packweb].
+[https://kobylky.radobyl.eu][packweb].
 
 
 ## Downloads
+
 The newest released version of the songbook or the source files packed in one
 archive can be found in the section [Releases][releases]. From version 2 there
 are two variants of the songbook, the one with chords `oddilovy_zpevnik1.pdf`
-and the one without chords `oddilovy_zpevnik1_text.pdf`.
+and the one without chords `oddilovy_zpevnik1_text.pdf`. Changes between
+versions are documented in the [CHANGELOG][changelog] file.
 
 
 ## Compilation requirements
+
 - Working [LaTeX][latex] distribution. 
 - [Songs][songs] package installed.
 - [Xindy][xindy] program, or better its modification adapted for the LaTeX
@@ -38,6 +41,7 @@ and the one without chords `oddilovy_zpevnik1_text.pdf`.
 
 
 ## Compilation
+
 You can run `build.bat` in Windows which executes the compilation
 automatically.
 
@@ -386,8 +390,9 @@ insertion. The registration is free of charge.
 
 
 [packmail]: mailto:2.smecka.kobylky@gmail.com
-[packweb]: http://kobylky.radobyl.eu
+[packweb]: https://kobylky.radobyl.eu
 [releases]: https://github.com/kobylky/oddilovy_zpevnik1/releases
+[changelog]: CHANGELOG.en-US.md
 [latex]: https://www.latex-project.org
 [songs]: http://songs.sourceforge.net
 [songs-doc]: http://songs.sourceforge.net/songsdoc/songs.html

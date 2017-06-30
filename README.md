@@ -13,17 +13,20 @@ na tvorbu písní [Songs][songs].
 Pro více informací o čínnosti našeho skautského oddílu 2. smečka vlčat Kobylky
 Litoměřice nás můžete kontaktovat například na oddílovém e-mailu
 [2.smecka.kobylky@gmail.com][packmail] nebo na našem
-webu [http://kobylky.radobyl.eu][packweb].
+webu [https://kobylky.radobyl.eu][packweb].
 
 
 ## Soubory ke stažení
+
 Nejnovější uvolněnou verzi zpěvníku a popřípadě zdrojové soubory zabalené v
 jednom archivu naleznete v sekci [Releases][releases]. Od verze 2 zpěvník
 existuje ve dvou variantách, ve variantě s akordy `oddilovy_zpevnik1.pdf` a
-bez akordů `oddilovy_zpevnik1_text.pdf`.
+bez akordů `oddilovy_zpevnik1_text.pdf`. Změny mezi jednotlivými verzemi
+zpěvníku jsou zaznamenány v souboru [CHANGELOG][changelog].
 
 
 ## Nástroje potřebné ke kompilaci
+
 - Funkční distribuce [LaTeXu][latex].
 - Nainstalovaný balík [Songs][songs].
 - Program [Xindy][xindy], lépe řečeno spíše jeho modifikaci adaptovanou na 
@@ -34,6 +37,7 @@ bez akordů `oddilovy_zpevnik1_text.pdf`.
 
 
 ## Kompilace
+
 Ve windows můžete spustit soubor `build.bat`, který provede kompilaci
 automaticky.
 
@@ -111,6 +115,7 @@ Zpěvník používá typografického systému LaTeX2e, ve kterém např.:
   `&` `_` `{` `}` `~` `\`, `` ` ``, musíte místo toho použít `\#`, `\$`, `\%`,
   `\^{}`, `\&`,  `\_`, `\{`, `\}`, `\~{}`, `\textbackslash{}`, `'`. Znaky `#` a
   `&` ale mohou být použity v akordech.
+
 
 ### Kmenový soubor zpěvníku
 
@@ -389,8 +394,9 @@ musíte být registrovaní uživatelé na GitHubu. Registrace je zdarma.
 
 
 [packmail]: mailto:2.smecka.kobylky@gmail.com
-[packweb]: http://kobylky.radobyl.eu
+[packweb]: https://kobylky.radobyl.eu
 [releases]: https://github.com/kobylky/oddilovy_zpevnik1/releases
+[changelog]: CHANGELOG.md
 [latex]: https://www.latex-project.org
 [songs]: http://songs.sourceforge.net
 [songs-doc]: http://songs.sourceforge.net/songsdoc/songs.html

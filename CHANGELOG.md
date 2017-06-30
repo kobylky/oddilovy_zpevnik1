@@ -9,6 +9,7 @@ Formát tohoto changelogu je založen na
 [Keep a Changelog](http://keepachangelog.com/) a řídí se
 [Semantickým Verzováním](http://semver.org/lang/cs/).
 
+
 ### Pravidla pro verzování:
 
 - **major verze:**
@@ -51,13 +52,16 @@ Formát tohoto changelogu je založen na
 ### Odstraněno
 
 - Některé písně byly zkráceny použitím repetice (`Anděl`, `Proměny`, `Tisíc
-mil`) nebo odebráním opakujících se akordů (`Batalion`, `Bludnej Ir`, `Čert v
-Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
-`Na kolena`, `Niagara`, `V pekle sudy válej`, `Valčíček`, `Večerníček`).
+  mil`) nebo odstraněním opakujících se akordů (`Batalion`, `Bludnej Ir`, `Čert
+  v Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
+  `Na kolena`, `Niagara`, `V pekle sudy válej`, `Valčíček`, `Večerníček`).
 - Odstraňen `a on tam stál` opakující se úryvek s písně `Strom`.
 
 
-### [Změny od verze beta 1:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...develop)
+### [Změny od verze beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
+
+
+## [Verze 2.0.0-beta.2 *(2017-06-30)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...v2.0.0-beta.2)
 
 
 ### Přidáno
@@ -65,7 +69,7 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 - Přidán český `CHANGELOG`.
 
 
-# Změněno
+### Změněno
 
 - Upřesněno `la la la` na konci písničky `Večerníček`.
 
