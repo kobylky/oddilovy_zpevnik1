@@ -61,6 +61,11 @@ Formát tohoto changelogu je založen na
 ### [Změny od verze beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
 
 
+### Opraveno
+
+- Překlepy.
+
+
 ## [Verze 2.0.0-beta.2 *(2017-06-30)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...v2.0.0-beta.2)
 
 

@@ -60,6 +60,11 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 ### [Changes from beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
 
 
+### Fixed
+
+- Typos.
+
+
 ## [Version 2.0.0-beta.2 *(2017-06-30)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.1...v2.0.0-beta.2)
 
 
