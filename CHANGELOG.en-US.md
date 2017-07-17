@@ -38,6 +38,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Changed to LaTeX backend.
 - Changed pagination and song order.
 - Specified the ending `la la la` from the `Večerníček` song.
+- A heading `I:` was added to the trailing line before the 3rd verse of the
+  `Pohár a kalich` song.
 
 
 ### Fixed
@@ -58,6 +60,12 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 
 
 ### [Changes from beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
+
+
+### Changed
+
+- A heading `I:` was added to the trailing line before the 3rd verse of the
+  `Pohár a kalich` song.
 
 
 ### Fixed

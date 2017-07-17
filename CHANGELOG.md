@@ -39,6 +39,7 @@ Formát tohoto changelogu je založen na
 - Zpěvník byl převeden do LaTeXu.
 - Změna stránkovaní a pořadí písní.
 - Upřesněno `la la la` na konci písničky `Večerníček`.
+- Nenadepsaná řádka před 3. slokou písně `Pohár a kalich` byla nadepsána `I:`.
 
 
 ### Opraveno
@@ -59,6 +60,11 @@ Formát tohoto changelogu je založen na
 
 
 ### [Změny od verze beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
+
+
+### Změněno
+
+- Nenadepsaná řádka před 3. slokou písně `Pohár a kalich` byla nadepsána `I:`.
 
 
 ### Opraveno
