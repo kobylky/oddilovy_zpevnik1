@@ -40,6 +40,7 @@ Formát tohoto changelogu je založen na
 - Změna stránkovaní a pořadí písní.
 - Upřesněno `la la la` na konci písničky `Večerníček`.
 - Nenadepsaná řádka před 3. slokou písně `Pohár a kalich` byla nadepsána `I:`.
+- Poslední sloka písně `Večerníček` byla nastavena na první sloku.
 
 
 ### Opraveno
@@ -65,6 +66,7 @@ Formát tohoto changelogu je založen na
 ### Změněno
 
 - Nenadepsaná řádka před 3. slokou písně `Pohár a kalich` byla nadepsána `I:`.
+- Poslední sloka písně `Večerníček` byla nastavena na první sloku.
 
 
 ### Opraveno

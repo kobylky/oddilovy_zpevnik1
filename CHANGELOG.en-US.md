@@ -40,6 +40,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Specified the ending `la la la` from the `Večerníček` song.
 - A heading `I:` was added to the trailing line before the 3rd verse of the
   `Pohár a kalich` song.
+- The last verse of the `Večerníček` song was changed to be equal to the first
+  verse.
 
 
 ### Fixed
@@ -66,6 +68,8 @@ Rathause`, `Darmoděj`, `Dopis Ježíškovi`, `Jasná zpráva`, `Kačerov`,
 
 - A heading `I:` was added to the trailing line before the 3rd verse of the
   `Pohár a kalich` song.
+- The last verse of the `Večerníček` song was changed to be equal to the first
+  verse.
 
 
 ### Fixed
