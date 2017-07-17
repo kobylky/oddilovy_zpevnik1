@@ -63,7 +63,7 @@ Formát tohoto changelogu je založen na
 - Odstraňen `a on tam stál` opakující se úryvek s písně `Strom`.
 
 
-### [Změny od verze beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...develop)
+### [Změny od verze beta 2:](https://github.com/kobylky/oddilovy_zpevnik1/compare/v2.0.0-beta.2...v2.0.0)
 
 
 ### Změněno
