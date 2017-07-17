@@ -26,6 +26,9 @@ Formát tohoto changelogu je založen na
 ## [Nepublikováno](https://github.com/kobylky/oddilovy_zpevnik1/compare/master...develop)
 
 
+## [Verze 2.0.0 *(2017-07-17)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0)
+
+
 ### Přidáno
 
 - Přidány 3 nové sloky do písně `David a Goliáš`.

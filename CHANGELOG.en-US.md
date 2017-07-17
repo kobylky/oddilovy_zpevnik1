@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased](https://github.com/kobylky/oddilovy_zpevnik1/compare/master...develop)
 
 
+## [Version 2.0.0 *(2017-07-17)*](https://github.com/kobylky/oddilovy_zpevnik1/compare/v1.0.0...v2.0.0)
+
+
 ### Added
 
 - Added 3 more verses to the `David a Goliáš` song.
